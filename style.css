@@ -167,11 +167,11 @@ header .dropdown:hover .primary{
   border-right:2px solid black;
 }
 
-#rest th:nth-child(5){
+#rest #comments{
   width:50%;
 }
 
-#rest tr td:nth-child(1){
+#rest tr td:nth-child(1), #rest #triggers tr td:nth-child(2){
   font-weight: bold;
   letter-spacing: 0.2em;
 }
