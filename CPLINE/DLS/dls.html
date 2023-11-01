@@ -155,10 +155,11 @@
             <p>The first step, CP-Line, involves solving a 1x1x3 bar in DL while solving corner permutation. If the DL corners are already solved (as they are about 40% of the times for an x2 y neutral solver, and about 25% of the time for an x2 y2 neutal solver), after identifying the corner pair options that can be swapped, any one pair of corners can be set up to one of the above configurations using R, U and slice moves, and the corresponding trigger can be done to solve CP while keeping the DL corners solved. The trigger can have wide moves as and when necessary to ensure efficiency of solving the DL edge. While the knwledge of only one trigger is sufficient to solve CP (especially since the configurations are only a U move away from each other), having multiple triggers at our disposal can help affect the DL edge in various ways.</p>
             <p>While the above summarises how each of the four triggers works, an advanced solver may get some help from the following table. Most users will however not require the following on any account.</p>
 
-                        <table>
+            <table id="triggers">
                 <thead>
                     <tr>
-                        <th>Trigger</th>
+                        <th>Trigger (opt 1)</th>
+                        <th>Trigger (opt 2)</th>
                         <th>Swap Setup 1</th>
                         <th>Swap Setup 2</th>
                         <th>Swap Setup 3</th>
@@ -167,26 +168,23 @@
                 <tbody>
                     <tr>
                         <td>F' U' F</td>
+                        <td>F' R' F</td>
                         <td>UFR - UFL</td>
                         <td>UBR - DBR</td>
                         <td>UBL - DFR</td>
                     </tr>
                     <tr>
                         <td>F' U F</td>
+                        <td>F' R2 F</td>
                         <td>UFR - UBR</td>
                         <td>UBL - DBR</td>
                         <td>UFL - DFR</td>
                     </tr>
                     <tr>
                         <td>F R F'</td>
+                        <td>F' U2 F</td>
                         <td>UBR - UBL</td>
                         <td>UFR - DFR</td>
-                        <td>UFL - DBR</td>
-                    </tr>
-                    <tr>
-                        <td>F R' F'</td>
-                        <td>UFR - UBR</td>
-                        <td>UBL - DFR</td>
                         <td>UFL - DBR</td>
                     </tr>
                 </tbody>
